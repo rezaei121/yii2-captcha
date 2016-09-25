@@ -10,8 +10,5 @@ use yii\helpers\ArrayHelper;
  */
 class CaptchaAction extends \yii\captcha\CaptchaAction
 {
-    public function run()
-    {
-        return "Hello!";
-    }
+
 }
