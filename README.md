@@ -1,6 +1,6 @@
 yii2 captcha
 ============
-Numeric captcha
+yii2 numeric captcha
 
 Installation
 ------------
