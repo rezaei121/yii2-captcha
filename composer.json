@@ -2,7 +2,7 @@
     "name": "developit/yii2-captcha",
     "description": "yii2 numeric captcha",
     "type": "yii2-extension",
-    "keywords": ["captcha","yii2","numeric captcha"],
+    "keywords": ["captcha","yii2","numeric captcha", "yii2 captcha","yii2 numeric captcha"],
     "license": "GPL-3.0",
     "authors": [
         {
