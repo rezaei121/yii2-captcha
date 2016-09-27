@@ -1,6 +1,6 @@
 {
     "name": "developit/yii2-captcha",
-    "description": "Numeric captcha",
+    "description": "yii2 numeric captcha",
     "type": "yii2-extension",
     "keywords": ["captcha","yii2","numeric captcha"],
     "license": "GPL-3.0",
@@ -16,11 +16,6 @@
     "autoload": {
         "psr-4": {
             "developit\\captcha\\": ""
-        }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.x-dev"
         }
     }
 }
