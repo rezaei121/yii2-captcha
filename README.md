@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist developit/yii2-captcha "dev-master"
+php composer.phar require --prefer-dist developit/yii2-captcha "~1.0"
 ```
 
 or add
 
 ```
-"developit/yii2-captcha": "dev-master"
+"developit/yii2-captcha": "~1.0"
 ```
 
 to the require section of your `composer.json` file.
