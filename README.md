@@ -1,6 +1,6 @@
-captcha for yii2
-================
-yiiframework 2 captcha
+yii2 captcha
+============
+Numeric captcha
 
 Installation
 ------------
@@ -28,4 +28,4 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \developit\captcha\AutoloadExample::widget(); ?>```
+<?= \developit\captcha\CaptchaAction; ?>```
