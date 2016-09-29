@@ -4,10 +4,9 @@ namespace developit\captcha;
 
 class CaptchaAction extends \yii\captcha\CaptchaAction
 {
-    public $minLength = 4;
-    public $maxLength = 9;
-    public $fontFile = '@yii/captcha/SpicyRice.ttf';
+    public $fontFile = '@developit/captcha/font/LithosPro-Regular.otf';
     public $foreColor = 0x999999;
+    public $type = 'default'; // numbers & letters
 
     protected function generateVerifyCode()
     {
@@ -21,10 +20,21 @@ class CaptchaAction extends \yii\captcha\CaptchaAction
             $this->maxLength = 9;
         }
         $length = mt_rand($this->minLength, $this->maxLength);
-        $numbers = '0123456789';
+
+        $str = '0123456789bcdfghjklmnpqrstvwxyz';
         $code = '';
         for ($i = 0; $i < $length; $i++) {
-            $code .= $numbers[mt_rand(0, 9)];
+            switch ($this->type)
+            {
+                case 'numbers':
+                    $code .= $str[mt_rand(0, 9)];
+                    break;
+                case 'letters':
+                    $code .= $str[mt_rand(10, 30)];
+                    break;
+                default:
+                    $code .= $str[mt_rand(0, 30)];
+            }
         }
 
         return $code;
