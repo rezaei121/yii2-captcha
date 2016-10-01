@@ -11,13 +11,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist developit/yii2-captcha "dev-master"
+php composer.phar require --prefer-dist developit/yii2-captcha "*"
 ```
 
 or add
 
 ```
-"developit/yii2-captcha": "dev-master"
+"developit/yii2-captcha": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -48,6 +48,7 @@ Once the extension is installed, simply modify your controler, add or change met
 
 In view
 ```php
+use developit\captcha\Captcha;
 <?=
 $form->field($model, 'verifyCode')->widget(Captcha::className())
 ?>
