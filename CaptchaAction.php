@@ -10,10 +10,14 @@ class CaptchaAction extends \yii\captcha\CaptchaAction
     public $fontFile = '@developit/captcha/font/LithosPro-Regular.otf';
     public $foreColor = 0x999999;
     public $type = 'default'; // numbers & letters
-    public $offset = -18;
+    public $offset = -2;
 
     public function run()
     {
+        if($this->type == 'numbers')
+        {
+            $this->offset = -18;
+        }
         if (Yii::$app->request->getQueryParam(self::REFRESH_GET_VAR) !== null) {
             // AJAX request for regenerating code
             $code = $this->getVerifyCode(true);
