@@ -1,6 +1,6 @@
 yii2 captcha
 ============
-
+yii2 captcha with Ability to recognize Arabic and Persian numbers.
 ![screenshot](http://www.developit.ir/tmp/yii2-captcha.jpg)
 
 Installation

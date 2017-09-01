@@ -10,6 +10,7 @@ class CaptchaAction extends \yii\captcha\CaptchaAction
     public $fontFile = '@developit/captcha/font/LithosPro-Regular.otf';
     public $foreColor = 0x999999;
     public $type = 'default'; // numbers & letters
+    public $offset = -18;
 
     public function run()
     {

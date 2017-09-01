@@ -5,6 +5,7 @@ use developit\captcha\yii2CaptchaAsset;
 
 class Captcha extends \yii\captcha\Captcha
 {
+    public $template = '<div class="developit-captcha">{image} {input}</div>';
     public function run()
     {
         $this->registerClientScript();
