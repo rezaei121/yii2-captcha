@@ -16,7 +16,7 @@ class CaptchaAction extends \yii\captcha\CaptchaAction
     {
         if($this->type == 'numbers')
         {
-            $this->offset = -18;
+            $this->offset = -10;
         }
         if (Yii::$app->request->getQueryParam(self::REFRESH_GET_VAR) !== null) {
             // AJAX request for regenerating code
